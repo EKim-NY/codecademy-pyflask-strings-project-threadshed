@@ -107,6 +107,6 @@ green&white;,;09/15/17,   Gail Phelps   ;,;$30.52
 
 #------------------------------------------------
 
-# Replace artifacts ";,;" with "/". 
+# Replace artifacts with a backslash.  
 daily_sales_replaced = daily_sales.replace(';,;', '/')
 print(daily_sales_replaced)
