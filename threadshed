@@ -110,3 +110,7 @@ green&white;,;09/15/17,   Gail Phelps   ;,;$30.52
 # Replace artifacts with a backslash.  
 daily_sales_replaced = daily_sales.replace(';,;', '/')
 print(daily_sales_replaced)
+
+# Split the last new string using a comma as the delimiter. 
+daily_transactions = daily_sales_replaced.split(',')
+print(daily_transactions)
