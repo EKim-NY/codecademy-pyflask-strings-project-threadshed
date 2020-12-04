@@ -122,3 +122,12 @@ for each_string in daily_transactions:
   daily_transactions_split.append(each_string.split('*')) 
 
 print(daily_transactions_split) 
+
+# Clean up the list. 
+transactions_clean = [] 
+for each_list in daily_transactions_split: 
+  for each_string in each_list:
+    transactions_clean.append(each_string.strip(' ').strip('\n').strip(' '))
+
+# No unnecessary whitespace should be visible anywhere. 
+print(transactions_clean)
