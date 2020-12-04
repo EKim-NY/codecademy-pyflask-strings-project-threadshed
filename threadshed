@@ -115,3 +115,10 @@ print(daily_sales_replaced)
 # Split the last new string using a comma as the delimiter. 
 daily_transactions = daily_sales_replaced.split(',')
 print(daily_transactions)
+
+# Split each individual transaction (string) into a list of its data points.
+daily_transactions_split = [] 
+for each_string in daily_transactions: 
+  daily_transactions_split.append(each_string.split('*')) 
+
+print(daily_transactions_split) 
