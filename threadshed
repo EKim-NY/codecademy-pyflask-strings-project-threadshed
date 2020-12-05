@@ -131,3 +131,24 @@ for each_list in daily_transactions_split:
 
 # No unnecessary whitespace should be visible anywhere. 
 print(transactions_clean)
+
+customers = [] 
+sales = []
+thread_sold = [] 
+
+index_customers = 0
+index_sales = 1
+index_thread_sold = 2 
+index_date = 3
+
+print(len(transactions_clean))
+
+# Collect all customers in one list. 
+# IndexError occurs when index_customers = len(transactions_clean) aka 400 in WHILE loop's boolean expression. The index of the last element is 399, not 400. 
+while index_customers < len(transactions_clean): 
+    customers.append(transactions_clean[index_customers]) 
+    print(index_customers, transactions_clean[index_customers])
+    index_customers += 4 
+
+print(customers)
+
