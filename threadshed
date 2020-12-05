@@ -152,3 +152,17 @@ while index_customers < len(transactions_clean):
 
 print(customers)
 
+
+# Collect all sales amounts in one list. 
+# while index_sales < len(transactions_clean): 
+#   sales.append(transactions_clean[index_sales])
+#   index_sales += 4 
+
+# print(sales)
+
+# Alternate method of collecting sales data to a list. 
+for i in range(len(transactions_clean)): 
+  if '$' in transactions_clean[i]:
+    sales.append(transactions_clean[i]) 
+
+print(sales)
